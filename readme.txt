@@ -4,9 +4,9 @@ Contributors: karim42
 Donate link: http://www.gp-codex.fr
 Tags: muslim, hadith, bukhari hadith, islam, sahih al-bukhari, coran, quran
 Requires at least: 3.0.1
-Tested up to: 4.9.8
-Stable tag: 4.9.8
-Requires PHP: 5.2.17
+Tested up to: 5.6
+Stable tag: 5.6
+Requires PHP: 5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,7 +40,7 @@ plugin-> add new-> in "Search Plugins" tape: Sahih al-Bukhari Hadiths
 
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
-3. use shortcode [bukhari-hadith] on your new page
+3. use shortcode [bukhari-hadiths] on your new page
 
 4. it's recommended to have a full width page.
 

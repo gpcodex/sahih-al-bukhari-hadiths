@@ -40,6 +40,7 @@ Author URI: http://gp-codex.fr
 		function hadith_js_scripts() {
 			wp_enqueue_script( 'loadhadith', plugin_dir_url(__FILE__).'/template/js/load_hadiths.js', array('jquery'), '1.0', true );
 			wp_localize_script('loadhadith', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
+
 		}
 
 
@@ -60,11 +61,11 @@ Author URI: http://gp-codex.fr
 
 		include "data/hadiths_data.php";
 
-		global jQuerywpdb;
+		global $wpdb;
 
 		require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 
-		dbDelta( jQuerybukhari_chapter );
+		dbDelta( $bukhari_chapter );
 
 		add_option( 'border_hadith_bloc', '005a8c', '', 'yes' );
 
@@ -89,11 +90,11 @@ Author URI: http://gp-codex.fr
 			
 			delete_option('background_hadith_ref');
 			
-			global jQuerywpdb;
+			global $wpdb;
 
-			jQuerytable_name = 'bukhari_chapters';
+			$table_name = 'bukhari_chapters';
 
-			jQuerywpdb->query("DROP TABLE IF EXISTS {jQuerytable_name}");	
+			$wpdb->query("DROP TABLE IF EXISTS {$table_name}");	
 			
 		}
  
